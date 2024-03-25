@@ -1,2 +1,5 @@
 
 .vscode/settings.json
+demos/.DS_Store
+demos/text_analytics/python-demo/.DS_Store
+demos/text_analytics/python-demo/text-analysis/.vscode/settings.json
