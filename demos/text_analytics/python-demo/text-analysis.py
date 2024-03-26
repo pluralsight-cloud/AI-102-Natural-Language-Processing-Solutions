@@ -62,12 +62,8 @@ def main():
                     print(f"\tText: {entity.text}")
                     print(f"\tCategory: {entity.category}")
                     print(f"\tConfidence Score: {entity.confidence_score}")
-                    # Optional: Print offset and length if needed
-                    # print(f"\tOffset: {entity.offset}")
-                    # print(f"\tLength: {entity.length}")
 
-            # Optionally, print redacted text
-            # To get the redacted text, you need to access the document result outside the entities list
+            # Print redacted text
             pii_result = ai_client.recognize_pii_entities(documents=[text])[0]
             if not pii_result.is_error:
                 print("\nRedacted Text:")
